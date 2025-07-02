@@ -74,11 +74,12 @@ const Pricing = () => {
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index} 
-              className={`relative transition-all duration-300 hover:shadow-floating hover:-translate-y-2 ${
+              className={`relative transition-all duration-500 hover:shadow-floating hover:-translate-y-3 animate-slide-up ${
                 plan.popular 
-                  ? 'border-primary shadow-card bg-primary/5' 
-                  : 'hover:shadow-card'
+                  ? 'border-primary shadow-card bg-gradient-to-br from-primary/5 to-accent/10 ring-2 ring-primary/20' 
+                  : 'hover:shadow-card border-0'
               }`}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">

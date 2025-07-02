@@ -63,7 +63,7 @@ const Facilities = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {facilities.map((facility, index) => (
-            <Card key={index} className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 bg-card border-0 shadow-soft">
+            <Card key={index} className="group hover:shadow-floating transition-all duration-500 hover:-translate-y-3 bg-card border-0 shadow-soft animate-fade-in hover:scale-105" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardContent className="p-6">
                 {facility.image ? (
                   <div className="mb-4 rounded-lg overflow-hidden">

@@ -25,7 +25,7 @@ const Location = () => {
       distance: "4 minutes walk to campus",
       phone: "+94 77 345 6789",
       whatsapp: "94773456789",
-      status: "Coming Soon"
+      status: "Available"
     }
   ];
 

@@ -44,17 +44,19 @@
     --whatsapp: 142 70% 49%;
     --whatsapp-foreground: 0 0% 100%;
     
-    /* Gradients */
+    /* Professional gradients */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 35%));
     --gradient-hero: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(210 100% 35%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(210 100% 96%) 0%, hsl(210 40% 96%) 100%);
     
-    /* Shadows */
+    /* Enhanced shadows */
     --shadow-soft: 0 4px 12px -4px hsl(210 100% 45% / 0.15);
     --shadow-card: 0 8px 25px -8px hsl(210 100% 45% / 0.12);
     --shadow-floating: 0 16px 40px -12px hsl(210 100% 45% / 0.25);
+    --shadow-glow: 0 0 40px hsl(210 100% 45% / 0.15);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

@@ -176,7 +176,7 @@ Please contact me to confirm availability and next steps.`;
                         <SelectContent>
                           <SelectItem value="colombo">Colombo</SelectItem>
                           <SelectItem value="batticaloa">Batticaloa</SelectItem>
-                          <SelectItem value="kurunegala">Kurunegala (Coming Soon)</SelectItem>
+                          <SelectItem value="kurunegala">Kurunegala</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>

@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Location from "@/components/Location";
 import BookingForm from "@/components/BookingForm";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <BookingForm />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
