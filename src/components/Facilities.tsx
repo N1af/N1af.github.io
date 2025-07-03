@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Bed, Wifi, Phone, Bed as Reading, Bed as Kitchen, Bed as Laundry, Bed as Camera } from "lucide-react";
+import { Bed, Phone, Bed as Reading, Bed as Kitchen, Bed as Laundry, Bed as Camera, ShoppingCart, MapPin, Printer, Heart } from "lucide-react";
 import bedroomImage from "@/assets/clean-bedroom.jpg";
 import studyHallImage from "@/assets/study-hall.jpg";
 
@@ -8,19 +8,13 @@ const Facilities = () => {
     {
       icon: Bed,
       title: "Spacious Clean Bedrooms",
-      description: "Comfortable single and shared rooms with quality mattresses and storage space",
+      description: "Comfortable shared rooms with quality mattresses and storage space for 4-5 students",
       image: bedroomImage
     },
     {
       icon: Phone,
       title: "24-Hour Water & Electricity",
       description: "Uninterrupted water supply and power backup for comfortable living",
-      image: null
-    },
-    {
-      icon: Wifi,
-      title: "Free High-Speed Wi-Fi",
-      description: "Reliable internet connection throughout the building for studies and entertainment",
       image: null
     },
     {
@@ -45,6 +39,30 @@ const Facilities = () => {
       icon: Camera,
       title: "24/7 CCTV Security",
       description: "Complete surveillance system ensuring safety and security of residents",
+      image: null
+    },
+    {
+      icon: ShoppingCart,
+      title: "Grocery Store",
+      description: "Convenient grocery store located just 50 meters away",
+      image: null
+    },
+    {
+      icon: Phone,
+      title: "Communication Center",
+      description: "Communication facilities available within 50 meters",
+      image: null
+    },
+    {
+      icon: Printer,
+      title: "Print Out Facilities",
+      description: "Professional printing services available within 150 meters walking distance",
+      image: null
+    },
+    {
+      icon: Heart,
+      title: "Medical Transport",
+      description: "Free medical transport service available for emergencies",
       image: null
     }
   ];

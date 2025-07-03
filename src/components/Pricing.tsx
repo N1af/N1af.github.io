@@ -15,46 +15,31 @@ const Pricing = () => {
     {
       title: "Shared Room",
       subtitle: "Budget-friendly option",
-      price: "6,000",
+      price: "5,000",
       features: [
-        "Shared room with 2-3 students",
+        "Shared room with 4-5 students",
         "All basic facilities included",
-        "Free Wi-Fi access",
         "Common study area",
         "Laundry facility",
-        "24/7 security"
+        "24/7 security",
+        "Medical transport (Free)"
       ],
       popular: false
     },
     {
       title: "Double Room",
       subtitle: "Perfect for friends",
-      price: "8,000",
+      price: "6,000",
       features: [
         "Room shared with 1 other student",
         "More privacy and space",
         "All basic facilities included",
-        "Free Wi-Fi access",
         "Common study area",
         "Laundry facility",
-        "24/7 security"
+        "24/7 security",
+        "Medical transport (Free)"
       ],
       popular: true
-    },
-    {
-      title: "Single Room",
-      subtitle: "Maximum privacy",
-      price: "10,000",
-      features: [
-        "Private single room",
-        "Complete privacy",
-        "All basic facilities included",
-        "Free Wi-Fi access",
-        "Priority in common areas",
-        "Laundry facility",
-        "24/7 security"
-      ],
-      popular: false
     }
   ];
 
@@ -70,7 +55,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index} 
@@ -122,14 +107,14 @@ const Pricing = () => {
                   >
                     Book This Room
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    className="w-full"
-                    onClick={() => window.open('https://wa.me/94771234567', '_blank')}
-                  >
-                    <Phone className="w-4 h-4 mr-2" />
-                    Ask Questions
-                  </Button>
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={() => window.open('https://wa.me/94774455342', '_blank')}
+                    >
+                      <Phone className="w-4 h-4 mr-2" />
+                      Ask Questions
+                    </Button>
                 </div>
               </CardContent>
             </Card>

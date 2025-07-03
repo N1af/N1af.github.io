@@ -32,7 +32,7 @@ const BookingForm = () => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.fullName || !formData.mobile || !formData.branch || !formData.roomType) {
+    if (!formData.fullName || !formData.mobile || !formData.roomType) {
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -51,7 +51,6 @@ const BookingForm = () => {
 • Email: ${formData.email || 'Not provided'}
 
 🏢 *Accommodation Details:*
-• Preferred Branch: ${formData.branch}
 • Room Type: ${formData.roomType}
 • Move-in Date: ${formData.moveInDate || 'Flexible'}
 
@@ -61,7 +60,7 @@ ${formData.message || 'No additional message'}
 Please contact me to confirm availability and next steps.`;
 
     // Open WhatsApp with pre-filled message
-    const whatsappURL = `https://wa.me/94771234567?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/94774455342?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 
     // Show success message
@@ -168,15 +167,13 @@ Please contact me to confirm availability and next steps.`;
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="branch">Preferred Branch *</Label>
+                      <Label htmlFor="branch">Booking Request *</Label>
                       <Select onValueChange={(value) => handleInputChange('branch', value)}>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select branch" />
+                          <SelectValue placeholder="Select to book" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="colombo">Colombo</SelectItem>
-                          <SelectItem value="batticaloa">Batticaloa</SelectItem>
-                          <SelectItem value="kurunegala">Kurunegala</SelectItem>
+                          <SelectItem value="available">Available Location</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -188,9 +185,8 @@ Please contact me to confirm availability and next steps.`;
                           <SelectValue placeholder="Select room type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="shared">Shared Room (Rs. 6,000)</SelectItem>
-                          <SelectItem value="double">Double Room (Rs. 8,000)</SelectItem>
-                          <SelectItem value="single">Single Room (Rs. 10,000)</SelectItem>
+                          <SelectItem value="shared">Shared Room (Rs. 5,000)</SelectItem>
+                          <SelectItem value="double">Double Room (Rs. 6,000)</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -238,7 +234,7 @@ Please contact me to confirm availability and next steps.`;
                     <Button
                       type="button"
                       variant="whatsapp"
-                      onClick={() => window.open('https://wa.me/94771234567', '_blank')}
+                      onClick={() => window.open('https://wa.me/94774455342', '_blank')}
                       className="flex items-center gap-2"
                     >
                       <Phone className="w-4 h-4" />

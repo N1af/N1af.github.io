@@ -17,7 +17,7 @@ const FloatingWhatsApp = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-float">
       <button
-        onClick={() => window.open('https://wa.me/94771234567', '_blank')}
+        onClick={() => window.open('https://wa.me/94774455342', '_blank')}
         className="bg-whatsapp hover:bg-whatsapp/90 text-white p-4 rounded-full shadow-floating hover:shadow-glow transition-all duration-300 hover:scale-110 group"
         aria-label="Contact us on WhatsApp"
       >

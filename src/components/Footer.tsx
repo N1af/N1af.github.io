@@ -102,31 +102,17 @@ const Footer = () => {
                 <Phone className="w-4 h-4" />
                 <div>
                   <a
-                    href="https://wa.me/94771234567"
+                    href="https://wa.me/94774455342"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary-foreground/80 hover:text-white transition-colors"
                   >
-                    +94 77 123 4567
+                    +94 77 445 5342
                   </a>
-                  <p className="text-xs opacity-70">Colombo & Batticaloa</p>
+                  <p className="text-xs opacity-70">Main Contact</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <div>
-                  <a
-                    href="https://wa.me/94712345678"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary-foreground/80 hover:text-white transition-colors"
-                  >
-                    +94 71 234 5678
-                  </a>
-                  <p className="text-xs opacity-70">Alternative Contact</p>
-                </div>
-              </div>
 
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
@@ -142,7 +128,7 @@ const Footer = () => {
             {/* WhatsApp Sticky Button */}
             <div className="mt-6">
               <button
-                onClick={() => window.open('https://wa.me/94771234567', '_blank')}
+                onClick={() => window.open('https://wa.me/94774455342', '_blank')}
                 className="w-full bg-whatsapp hover:bg-whatsapp/90 text-white px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors"
               >
                 <Phone className="w-4 h-4" />
