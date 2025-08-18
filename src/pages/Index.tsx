@@ -8,7 +8,7 @@ import Location from "@/components/Location";
 import BookingForm from "@/components/BookingForm";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import AdminButton from "@/components/AdminButton";
+// import AdminButton from "@/components/AdminButton";
 
 const Index = () => {
   return (
@@ -25,7 +25,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingWhatsApp />
-      <AdminButton />
+      {/* <AdminButton /> */}
     </div>
   );
 };

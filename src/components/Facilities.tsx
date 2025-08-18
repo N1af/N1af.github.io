@@ -9,7 +9,7 @@ const Facilities = () => {
       icon: Bed,
       title: "Spacious Clean Bedrooms",
       description: "Comfortable shared rooms with quality mattresses and storage space for 4-5 students",
-      image: bedroomImage
+      // image: bedroomImage
     },
     {
       icon: Phone,
@@ -21,7 +21,7 @@ const Facilities = () => {
       icon: Reading,
       title: "Common Reading Hall",
       description: "Quiet study space with proper lighting and comfortable seating",
-      image: studyHallImage
+      // image: studyHallImage
     },
     {
       icon: Kitchen,

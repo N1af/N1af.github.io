@@ -42,7 +42,7 @@ const BookingForm = () => {
     }
 
     // Create WhatsApp message
-    const message = `🏠 *New Booking Request - SLIATE Boarding Home*
+    const message = `🏠 *New Booking Request - Students Boarding Home*
 
 📋 *Student Details:*
 • Name: ${formData.fullName}
@@ -243,7 +243,7 @@ Please contact me to confirm availability and next steps.`;
                     <Button
                       type="button"
                       variant="outline"
-                      onClick={() => window.open('mailto:sliatehome@example.com', '_blank')}
+                      onClick={() => window.open('mailto:Acmirfan143477@gmail.com', '_blank')}
                       className="flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4" />

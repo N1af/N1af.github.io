@@ -22,8 +22,8 @@ const Header = () => {
               <span className="text-white font-bold text-lg">S</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">SLIATE Boarding</h1>
-              <p className="text-xs text-muted-foreground">Students Home</p>
+              <h1 className="text-xl font-bold text-foreground">Students </h1>
+              <p className="text-xs text-muted-foreground">Boarding Nawalapitiya</p>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ const Header = () => {
               Reviews
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('location')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Contact
@@ -65,7 +65,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-3">
             <Button
               variant="whatsapp"
-              onClick={() => window.open('https://wa.me/94771234567', '_blank')}
+              onClick={() => window.open('https://wa.me/94774455342', '_blank')}
               className="flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
@@ -117,7 +117,7 @@ const Header = () => {
                 Reviews
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('location')}
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 Contact
@@ -125,7 +125,7 @@ const Header = () => {
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
                   variant="whatsapp"
-                  onClick={() => window.open('https://wa.me/94771234567', '_blank')}
+                  onClick={() => window.open('https://wa.me/94774455342', '_blank')}
                   className="flex items-center justify-center gap-2"
                 >
                   <Phone className="w-4 h-4" />

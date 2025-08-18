@@ -19,8 +19,8 @@ const Footer = () => {
                 <span className="text-primary font-bold text-lg">S</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">SLIATE Boarding Home</h3>
-                <p className="text-sm opacity-90">Students Home</p>
+                <h3 className="text-xl font-bold">Students</h3>
+                <p className="text-sm opacity-90">Boarding Nawalapitiya</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
@@ -28,22 +28,22 @@ const Footer = () => {
               Located conveniently near campuses with all modern facilities.
             </p>
             <div className="flex space-x-4">
-              <a
+              {/* <a
                 href="https://instagram.com/sliateboarding"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://facebook.com/sliateboarding"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -88,7 +88,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('location')}
                   className="text-primary-foreground/80 hover:text-white transition-colors"
                 >
-                  Locations
+                  Contact
                 </button>
               </li>
             </ul>
@@ -117,10 +117,10 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 <a
-                  href="mailto:sliatehome@example.com"
+                  href="mailto:Acmirfan143477@gmail.com"
                   className="text-primary-foreground/80 hover:text-white transition-colors"
                 >
-                  sliatehome@example.com
+                  Acmirfan143477@gmail.com
                 </a>
               </div>
             </div>
@@ -142,7 +142,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-primary-foreground/80 text-sm">
-              © 2024 SLIATE Students Boarding Home. All rights reserved.
+              © 2024 Students Boarding Nawalapitiya. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <p className="text-primary-foreground/60 text-xs">

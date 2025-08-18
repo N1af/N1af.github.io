@@ -1,45 +1,84 @@
+import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-const Testimonials = () => {
-  const testimonials = [
+type Feedback = {
+  id: number;
+  name: string;
+  rating: number;
+  text: string;
+};
+
+const TestimonialsWithFeedbackForm = () => {
+  const [feedbacks] = useState<Feedback[]>([
     {
-      name: "Ravi Kumar",
-      course: "HND IT",
+      id: 1,
+      name: "Fathima",
       rating: 5,
-      text: "This place is so clean and quiet! Perfect environment for studying. The Wi-Fi is fast and the common study hall is exactly what I needed for my IT course.",
-      avatar: "RK"
+      text: `Jazakallah Khair, Naana. To Dhatha Aunty and everyone — you all have helped us so much.
+Whatever we needed, you kept asking and provided everything for us… You’ve kept us safe all this time.
+For everything, Jazakallah Khair, Naana.
+We will never forget all of you.
+
+Now, we can’t even imagine life without you, Naana… That thought itself makes us sad.
+Our duas (prayers) will always be with you.
+
+Naana, please keep this group open for updates.
+If possible, share voice notes here too — we will also, Insha Allah, talk with you.
+
+Definitely, please bring Dhatha Aunty, Shabira, and everyone from the shop to visit our home.`
     },
     {
-      name: "Ahmad Hassan", 
-      course: "HNDE",
+      id: 2,
+      name: "Mufa",
       rating: 5,
-      text: "College is just 5 minutes walking distance. Super comfortable and the staff is very helpful. The security makes my parents feel safe about me staying here.",
-      avatar: "AH"
+      text: `Jazakallahu Khair, Naana and Dhatha, for everything…
+Words are not enough to explain all that you both have done for us, Naana and Dhatha.
+Whatever we asked, without hesitation you provided for us, and you took such good care of us.
+
+We will also never forget both of you.
+We too, knowingly or unknowingly, may have made some mistakes.
+If so, we are extremely sorry, Dhatha, Naana.
+
+Aunty, please also keep us in your duas, Naana and Dhatha.
+
+Jazakallahu Khair, Naana and Dhatha.`
     },
     {
-      name: "Priya Sharma",
-      course: "HND Business",
+      id: 3,
+      name: "Husniya",
       rating: 5,
-      text: "Great facilities and very affordable. The laundry area and cooking facility make life so much easier. Highly recommend for SLIATE students!",
-      avatar: "PS"
+      text: `Assalamu Alaikum, Naana and Dhatha 💔🥺
+I don’t even know how to express what I feel, it’s so difficult…
+Leaving behind a family and going away like this feels so painful.
+
+You took care of us without any shortcomings, just like your own sister and brother.
+Aunty, shop sis, and everyone — we are going to miss you all so much 🥺❤‍🩹.
+
+The memories of that home and the time we spent together with all of you are unforgettable 💔.`
     },
     {
-      name: "Mohamed Ali",
-      course: "HND Engineering",
+      id: 4,
+      name: "Nazmin",
       rating: 5,
-      text: "The 24/7 electricity and water supply is a huge plus. Never had any issues with power cuts during my studies. Clean rooms and friendly environment.",
-      avatar: "MA"
+      text: `Jazakallahu Khair, Naana, Dhatha, and Aunty, for everything…
+These two years went by so quickly 🥹, but they gave us countless memories 🥺.
+
+Whatever we asked for, Naana, without hesitation you did it for us.
+You took such good care of us — Jazakallahu Khair ♥️.
+
+Just one worry remains — may such a life not come again 😢.
+Insha Allah, when you come to Kandy, please do call.
+
+Keep us in your duas, Naana and Dhatha.`
     }
-  ];
+  ]);
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, index) => (
       <span
         key={index}
-        className={`text-lg ${
-          index < rating ? 'text-yellow-400' : 'text-gray-300'
-        }`}
+        className={`text-lg ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`}
       >
         ★
       </span>
@@ -58,33 +97,31 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="group hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-card border-0 shadow-soft">
+        {/* Feedback display */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+          {feedbacks.map((testimonial) => (
+            <Card key={testimonial.id} className="group hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-card border-0 shadow-soft">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 flex-shrink-0">
                     <AvatarFallback className="bg-primary text-primary-foreground font-semibold">
-                      {testimonial.avatar}
+                      {testimonial.name.split(' ').map(n => n[0]).join('').toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
-                  
+
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="font-semibold text-foreground">
                         {testimonial.name}
                       </h3>
-                      <span className="text-sm text-muted-foreground">
-                        • {testimonial.course}
-                      </span>
                     </div>
-                    
+
                     <div className="flex gap-1 mb-3">
                       {renderStars(testimonial.rating)}
                     </div>
-                    
-                    <blockquote className="text-muted-foreground leading-relaxed">
-                      "{testimonial.text}"
+
+                    <blockquote className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                      {testimonial.text}
                     </blockquote>
                   </div>
                 </div>
@@ -92,39 +129,9 @@ const Testimonials = () => {
             </Card>
           ))}
         </div>
-
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-card rounded-2xl p-8 shadow-card max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-foreground mb-4">
-              Ready to Join Our Community?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Experience the comfort and convenience that hundreds of SLIATE students have enjoyed. 
-              Book your spot today!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => {
-                  const element = document.getElementById('booking');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary-hover transition-colors"
-              >
-                Book Your Room
-              </button>
-              <button
-                onClick={() => window.open('https://wa.me/94771234567', '_blank')}
-                className="px-6 py-3 bg-whatsapp text-whatsapp-foreground rounded-lg hover:bg-whatsapp/90 transition-colors"
-              >
-                Chat with Current Students
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default TestimonialsWithFeedbackForm;

@@ -27,10 +27,13 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Welcome to
-            <span className="block text-accent-foreground">SLIATE Students Boarding Home</span>
+            <span className="block text-white">Students Boarding Nawalapitiya - SLIATE.</span>
           </h1>
           
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="font-bold text-center">
+              * Note - Boarding Only For Girls *
+            </p>
             Located just a few minutes from SLIATE college campuses, our boarding home provides students with a peaceful, clean, and secure environment that supports focus and academic success.
           </p>
 
@@ -73,7 +76,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               onClick={() => scrollToSection('booking')}
-              className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary"
+              className="w-full sm:w-auto border-white text-blue-500 hover:bg-white hover:text-primary"
             >
               Book a Bed
             </Button>

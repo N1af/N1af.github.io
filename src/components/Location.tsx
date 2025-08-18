@@ -30,7 +30,7 @@ const Location = () => {
               <div className="text-center space-y-4">
                 <div className="flex items-center justify-center gap-3">
                   <MapPin className="w-6 h-6 text-primary" />
-                  <span className="text-lg font-medium">Near SLIATE Campus</span>
+                  <span className="text-lg font-medium">Near SLIATE Campus - 800m</span>
                 </div>
                 
                 <div className="bg-card rounded-lg p-6 shadow-soft">
@@ -52,10 +52,10 @@ const Location = () => {
                     <div className="flex items-center justify-center gap-3">
                       <Mail className="w-5 h-5 text-primary" />
                       <a 
-                        href="mailto:sliatehome@example.com"
+                        href="mailto:Acmirfan143477@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        sliatehome@example.com
+                        Acmirfan143477@gmail.com
                       </a>
                     </div>
                   </div>

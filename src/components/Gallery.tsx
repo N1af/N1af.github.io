@@ -3,34 +3,39 @@ import { Card, CardContent } from "@/components/ui/card";
 const Gallery = () => {
   const galleryImages = [
     {
-      src: "/lovable-uploads/b8282c21-fea8-4575-bb9d-01902f84bc39.png",
+      src: "/uploads/b8282c21-fea8-4575-bb9d-01902f84bc39.png",
       title: "Exterior View",
       description: "Beautiful exterior of our boarding home"
     },
     {
-      src: "/lovable-uploads/329987da-30e8-4d7e-b2ce-70f79377eef6.png",
+      src: "/uploads/329987da-30e8-4d7e-b2ce-70f79377eef6.png",
       title: "Study Area",
       description: "Dedicated study space for students"
     },
     {
-      src: "/lovable-uploads/c4f297c1-ad6e-4053-94a5-69979ad3832a.png",
+      src: "/uploads/Image01.jpg",
       title: "Shared Bedroom",
       description: "Comfortable shared accommodation"
     },
     {
-      src: "/lovable-uploads/9e78a204-df2b-42e3-9ca2-e0014d7f1c8f.png",
+      src: "/uploads/9e78a204-df2b-42e3-9ca2-e0014d7f1c8f.png",
       title: "Double Room",
       description: "Spacious double occupancy room"
     },
     {
-      src: "/lovable-uploads/fa886346-c5d7-4468-91fe-53a9a398997c.png",
+      src: "/uploads/fa886346-c5d7-4468-91fe-53a9a398997c.png",
       title: "Kitchen Facility",
       description: "Well-equipped kitchen for cooking"
     },
     {
-      src: "/lovable-uploads/7df54a53-37f0-4e95-a588-8c9d1dd7feb9.png",
+      src: "/uploads/7df54a53-37f0-4e95-a588-8c9d1dd7feb9.png",
       title: "Bathroom",
       description: "Clean and modern bathroom facilities"
+    },
+    {
+      src: "/uploads/image02.jpg",
+      title: "Out View",
+      description: "Peaceful environment with natural beauty"
     }
   ];
 
@@ -46,11 +51,13 @@ const Gallery = () => {
           </p>
         </div>
 
+        {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryImages.map((image, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-floating transition-all duration-500 hover:-translate-y-3 bg-card border-0 shadow-soft animate-fade-in overflow-hidden"
+              className={`group hover:shadow-floating transition-all duration-500 hover:-translate-y-3 bg-card border-0 shadow-soft animate-fade-in overflow-hidden 
+                ${index === galleryImages.length - 1 ? "md:col-span-2 lg:col-span-3 mx-auto" : ""}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
@@ -60,7 +67,8 @@ const Gallery = () => {
                     alt={image.title}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
-                      e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNzUgMTUwSDIyNVYyMDBIMTc1VjE1MFoiIGZpbGw9IiNEMUQ1REIiLz4KPHA+UGhvdG88L3A+Cjwvc3ZnPgo=';
+                      e.currentTarget.src =
+                        'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xNzUgMTUwSDIyNVYyMDBIMTc1VjE1MFoiIGZpbGw9IiNEMUQ1REIiLz4KPHA+UGhvdG88L3A+Cjwvc3ZnPgo=';
                     }}
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -75,6 +83,7 @@ const Gallery = () => {
           ))}
         </div>
 
+        {/* CTA Card */}
         <div className="mt-16 text-center">
           <Card className="bg-card rounded-2xl p-8 shadow-card max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
