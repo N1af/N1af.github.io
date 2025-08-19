@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
+    "homepage": "https://N1af.github.io",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
