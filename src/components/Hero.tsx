@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Welcome to
-            <span className="block text-white">Students Boarding Nawalapitiya - SLIATE.</span>
+            <span className="block text-white">Students Boarding Nawalapitiya.</span>
           </h1>
           
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
