@@ -28,22 +28,7 @@ const Footer = () => {
               Located conveniently near campuses with all modern facilities.
             </p>
             <div className="flex space-x-4">
-              {/* <a
-                href="https://instagram.com/sliateboarding"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a> */}
-              {/* <a
-                href="https://facebook.com/sliateboarding"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a> */}
+              {/* Social Media Links (optional) */}
             </div>
           </div>
 
@@ -113,7 +98,6 @@ const Footer = () => {
                 </div>
               </div>
               
-
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 <a
@@ -139,16 +123,33 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-8 pt-6 text-center">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-primary-foreground/80 text-sm">
+        <div className="border-t border-white/20 mt-8 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-primary-foreground/80 text-sm text-center md:text-left">
               © 2024 Students Boarding Nawalapitiya. All rights reserved.
             </p>
-            <div className="flex items-center space-x-4 mt-4 md:mt-0">
-              <p className="text-primary-foreground/60 text-xs">
-                Near SLIATE Campus • Clean • Safe • Affordable
-              </p>
-            </div>
+            <p className="text-primary-foreground/60 text-xs text-center md:text-right">
+              Near SLIATE Campus • Clean • Safe • Affordable
+            </p>
+          </div>
+
+          {/* Final Line - Company Details */}
+          <div className="mt-4 text-center">
+            <p className="text-primary-foreground/70 text-xs">
+              Designed by <span className="font-semibold">Anexaa IT Company</span> •{" "}
+              <a
+                href="tel:+94753537226"
+                className="hover:text-white transition-colors"
+              >
+                +94 75 353 7226 /
+              </a>
+              <a
+                href="tel:+94787106146"
+                className="hover:text-white transition-colors"
+              >
+                / +94 78 710 6146
+              </a>
+            </p>
           </div>
         </div>
       </div>
