@@ -52,10 +52,10 @@ const Location = () => {
                     <div className="flex items-center justify-center gap-3">
                       <Mail className="w-5 h-5 text-primary" />
                       <a 
-                        href="mailto:Acmirfan143477@gmail.com"
+                        href="mailto:acmirfan143477@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        Acmirfan143477@gmail.com
+                        acmirfan143477@gmail.com
                       </a>
                     </div>
                   </div>

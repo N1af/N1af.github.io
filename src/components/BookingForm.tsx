@@ -243,7 +243,7 @@ Please contact me to confirm availability and next steps.`;
                     <Button
                       type="button"
                       variant="outline"
-                      onClick={() => window.open('mailto:Acmirfan143477@gmail.com', '_blank')}
+                      onClick={() => window.open('mailto:acmirfan143477@gmail.com', '_blank')}
                       className="flex items-center gap-2"
                     >
                       <Mail className="w-4 h-4" />
